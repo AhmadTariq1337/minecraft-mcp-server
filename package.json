@@ -1,0 +1,37 @@
+{
+  "name": "minecraft-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server that lets any AI agent view, build, and act inside a Minecraft Java Edition world (TLauncher/offline-mode compatible) via a mineflayer bot.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "minecraft-mcp-server": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AhmadTariq1337/minecraft-mcp-server.git"
+  },
+  "keywords": ["mcp", "minecraft", "mineflayer", "ai-agent", "model-context-protocol"],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "mineflayer": "^4.29.0",
+    "mineflayer-pathfinder": "^2.4.5",
+    "mineflayer-collectblock": "^1.4.1",
+    "prismarine-item": "^1.18.0",
+    "vec3": "^0.1.10",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
